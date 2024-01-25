@@ -12,6 +12,6 @@
  */
 
 export function handleInput(input: string | number) {
-    return input
+    return `Input is a ${typeof input}: ${input}`
     // 在此實現函式
 }
