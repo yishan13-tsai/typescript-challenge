@@ -10,4 +10,6 @@
  */
 export function toUpperCase(str: string): string {
     // 請在此處寫下你的程式碼
+    // return str.toUpperCase() ??
+    return str.split('').map((e) => e.charCodeAt(0) > 96 && e.charCodeAt(0) < 123 ? String.fromCharCode(e.charCodeAt(0) - 32) : e).join('')
 }
